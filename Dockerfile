@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ ./app
 
-RUN chmod 777 /app/data
+RUN chmod 777 ./app/data
 
 EXPOSE 8000
 
