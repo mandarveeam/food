@@ -3,6 +3,13 @@ from fastapi import FastAPI, Request, Form, HTTPException, Depends
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+from app.db import init_db
+
+init_db()   # ensure DB & tables exist
+
+app = FastAPI()
+
+
 
 import jwt
 
