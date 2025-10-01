@@ -1,7 +1,7 @@
 import os
 import sqlite3
 
-DB_DIR = "/app/data"        # folder where DB will live
+DB_DIR = "/tmp"        # folder where DB will live
 DB_PATH = os.path.join(DB_DIR, "foodapp.db")
 
 def init_db():
